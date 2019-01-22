@@ -11,17 +11,17 @@
 import os
 # Set study info (may need to change for your study)
 # These variables are used only in this file for paths. Can omit if wanted.
-group = 
-study = 
-PI = 
-scriptsFolder = 
+group = "dcnlab"
+study = "SHARP"
+PI = "Nick Allen"
+scriptsFolder = "SHARP_Scripts"
 
 # The following variables are used in the main script and need to be defined here. 
 # They need to exist prior to running the script
 
 # Directories
 parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder that contains bidsdir and codedir
-dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", group, 'Archive', "sharp")
+dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", "adapt_lab", 'Archive', "sharp")
 bidsdir = os.path.join(parentdir, "bids_data") # where the niftis will be put
 codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 logdir = os.path.join(codedir, "logs_helper")
@@ -31,10 +31,10 @@ outputlog = os.path.join(logdir, "outputlog_helper.txt")
 errorlog = os.path.join(logdir, "errorlog_helper.txt")
 
 # Test subject
-test_subject =  # Name of a directory that contains DICOMS for one participant
+test_subject =  "SH166_20151214"# Name of a directory that contains DICOMS for one participant
 
 # Run on local machine (run_local = True) or high performance cluster with slurm (run_local = False)
-run_local = False
+run_local = False 
 
 # If false, set the singularity image. Else, set to "NA"
-singularity_image =  os.path.join(os.sep, "projects", group, "shared", "containers", "Dcm2Bids-master.simg")
+singularity_image =  os.path.join(os.sep, "projects", group, "shared", "BIDS","SingularityContainers", "Dcm2Bids-master.simg")

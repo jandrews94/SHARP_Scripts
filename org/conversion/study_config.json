@@ -1,50 +1,20 @@
 {
     "descriptions": [
-         {
-            "dataType": "anat",
-            "modalityLabel": "T1w",
-            "criteria": {
-                "SeriesDescription": "mprage_p2_ND"
-            }
-        },
         {
             "dataType": "anat",
             "modalityLabel": "T1w",
             "criteria": {
-                "SeriesDescription": "mprage_p2"
+                "SeriesDescription": "mprage_p*"
             }
         },
         {
             "dataType": "func",
             "modalityLabel": "bold",
-            "customLabels": "task-rest",
+            "customLanels": "task-rest",
             "criteria": {
-                "SeriesDescription": "Resting_1"
-            }
-        },
-	{
-	    "dataType": "func",
-            "modalityLabel": "bold",
-            "customLabels": "task-rest",
-            "criteria": {
-                "SeriesDescription": "Resting_2"
-            }
-	},
-        {
-            "dataType": "dwi",
-            "modalityLabel": "dwi",
-            "customLabels": "acq-rl",
-            "criteria": {
-                "SeriesDescription": "diff_mb2_g2_64dirs_2mm_rl"
-            }
-        },
-        {
-            "dataType": "dwi",
-            "modalityLabel": "dwi",
-            "customLabels": "acq-lr",
-            "criteria": {
-                "SeriesDescription": "diff_mb2_g2_64dirs_2mm_lr"
+                "SeriesDescription": "Resting_*"
             }
         }
     ]
 }
+     

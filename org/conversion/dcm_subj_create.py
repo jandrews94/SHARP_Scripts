@@ -4,7 +4,7 @@ import os
 
 # Set study info (may need to change for your study)
 # These variables are used only in this file for paths. Can omit if wanted.
-group = "adapt_lab"
+group = "dcnlan"
 study = "SHARP"
 PI = "Allen"
 scriptsFolder = "SHARP_Scripts"
@@ -13,7 +13,7 @@ scriptsFolder = "SHARP_Scripts"
 # They need to exist prior to running the script
 
 # Directories
-dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", group, "Archive", "sharp")
+dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", "adapt_lab", "Archive", "sharp")
 parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder that contains bidsdir and codedir
 codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 
